@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project management</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+</head>
+
+<body>
+    <main>
+        <section class="product__form__wrapper">
+            <form name="form__name" action="" class="product__form">
+                <div>
+                    <label for="">ID</label>
+                    <input type="number" name="ID__no" placeholder="ID" id="input__ID">
+                </div>
+                <div>
+                    <label for="">Product name</label>
+                    <input type="text" name="product_name" placeholder="Product name" id="input__name">
+                </div>
+                <div>
+                    <label for="">Price</label>
+                    <input type="text" name="price" placeholder="Price" id="input__price">
+                </div>
+                <input type="button" id="add" value="Add" onclick="addRow();">
+            </form>
+        </section>
+        <h2 >Product List</h2>
+        <section class="product__table__section">
+          
+            <table id="tablename" border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+
+                </thead>
+                <tbody>
+
+                </tbody>
+               
+            </table>
+        </section>
+
+    </main>
+    <script src="/JS/script.js"></script>
+</body>
+
+</html>
