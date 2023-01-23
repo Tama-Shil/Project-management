@@ -50,7 +50,14 @@ function deleteRow(ele){
     }
 
 }
+function checkdelete(ele){
+    if(confirm('Delete the record')){
+        return deleteRow(ele);
+    }else{
+        return ;
+    }
 
+}
 function addRow() {
 
     var idno = document.getElementById("input__ID").value;
@@ -65,7 +72,7 @@ function addRow() {
         tableRow.insertCell(0).innerHTML = idno;
         tableRow.insertCell(1).innerHTML = product_name;
         tableRow.insertCell(2).innerHTML = price;
-        tableRow.insertCell(3).innerHTML = '<input type="button" value="delete" onclick="deleteRow(this)" />';
+        tableRow.insertCell(3).innerHTML = '<input type="button" value="delete" onclick="checkdelete(this)" />';
 
         idlist.push(idno);
     }
