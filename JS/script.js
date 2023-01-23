@@ -41,20 +41,20 @@ function valid() {
 
     return true;
 }
-function deleteRow(ele){
+function deleteRow(ele) {
     var table = document.getElementById("tablename");
-    if(ele){
+    if (ele) {
         ele.parentNode.parentNode.remove();
-    }else{
-        table.deleteRow(rowCount-1);
+    } else {
+        table.deleteRow(rowCount - 1);
     }
 
 }
-function checkdelete(ele){
-    if(confirm('Delete the record')){
+function checkdelete(ele) {
+    if (confirm('Delete the record')) {
         return deleteRow(ele);
-    }else{
-        return ;
+    } else {
+        return;
     }
 
 }
